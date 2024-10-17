@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<doctrine-mapping xmlns="http://doctrine-project.org/schemas/orm/doctrine-mapping"
+                  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                  xsi:schemaLocation="http://doctrine-project.org/schemas/orm/doctrine-mapping
+                                      http://doctrine-project.org/schemas/orm/doctrine-mapping.xsd">
+
+    <entity name="App\Domain\Financas\Entity\Categoria" 
+            table="categorias"
+            repository-class="App\Infrastructure\Persistence\Financas\Repository\CategoriaRepository"
+    >
+        <id name="id" type="integer" column="id">
+            <generator strategy="AUTO"/>
+        </id>
+        <field name="descricao" type="string" column="descricao"/>
+        <many-to-one field="tipo" target-entity="App\Domain\Financas\Entity\TipoTransacao">
+            <join-column name="tipo_id" referenced-column-name="id"/>
+        </many-to-one>
+        <many-to-one field="usuario" target-entity="App\Domain\Usuario\Entity\Usuario">
+            <join-column name="usuario_id" referenced-column-name="id"/>
+        </many-to-one>
+    </entity>
+
+</doctrine-mapping>
