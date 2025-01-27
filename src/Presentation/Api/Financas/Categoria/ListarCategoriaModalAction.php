@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Presentation\Api\Financas\Categoria\Query;
+namespace App\Presentation\Api\Financas\Categoria;
 
 use App\Domain\Financas\Entity\Categoria;
 use Doctrine\ORM\EntityManagerInterface;
