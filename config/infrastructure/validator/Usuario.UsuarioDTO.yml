@@ -1,0 +1,11 @@
+Application\DTO\Usuario\UsuarioDto:
+    properties:
+        nome:
+            - NotBlank: ~
+            - Type: string
+        email:
+            - NotBlank: ~
+            - Type: string
+        senha:
+            - NotBlank: ~
+            - Type: string

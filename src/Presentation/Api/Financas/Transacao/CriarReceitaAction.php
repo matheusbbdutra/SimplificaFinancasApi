@@ -1,13 +1,13 @@
 <?php
 
-namespace App\Presentation\Api\Financas\Contas\Command;
+namespace App\Presentation\Api\Financas\Transacao;
 
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\Routing\Attribute\Route;
 
-class NovaContaAction
+class CriarReceitaAction
 {
-    #[Route('/api/financas/nova-conta', name: 'nova_conta', methods: ['POST'])]
+    #[Route('/api/financas/nova-receita', methods: ['POST'])]
     public function __invoke(Request $request)
     {
         // TODO: Implementar action

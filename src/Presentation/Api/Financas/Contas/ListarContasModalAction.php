@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Presentation\Api\Financas\Contas\Query;
+namespace App\Presentation\Api\Financas\Contas;
 
 use App\Domain\Financas\Entity\Conta;
 use Doctrine\ORM\EntityManagerInterface;

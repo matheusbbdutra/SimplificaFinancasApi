@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Presentation\Api\Financas\Transacao\Command;
+namespace App\Presentation\Api\Financas\Transacao;
 
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\Routing\Attribute\Route;
