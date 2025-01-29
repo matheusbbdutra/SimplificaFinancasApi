@@ -1,0 +1,17 @@
+nelmio_api_doc:
+  areas:
+    default:
+      path_patterns: [ ^/api ]
+  documentation:
+    info:
+      title: 'API Documentation'
+      description: 'This is the API documentation for the project.'
+      version: '1.0.0'
+    components:
+      securitySchemes:
+        BearerAuth:
+          type: http
+          scheme: bearer
+          bearerFormat: JWT
+      security:
+        - BearerAuth: [ ]
