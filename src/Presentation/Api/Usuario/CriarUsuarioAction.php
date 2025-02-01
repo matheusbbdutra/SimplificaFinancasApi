@@ -71,12 +71,12 @@ use OpenApi\Attributes as OA;
         ),
     ]
 )]
-class CriarUsuarioAction
+readonly class CriarUsuarioAction
 {
     public function __construct(
-        private readonly SerializerInterface $serializer,
-        private readonly ValidatorInterface $validator,
-        private readonly CriarUsuarioUseCase $useCase
+        private SerializerInterface $serializer,
+        private ValidatorInterface  $validator,
+        private CriarUsuarioUseCase $useCase
     ) {
     }
 
